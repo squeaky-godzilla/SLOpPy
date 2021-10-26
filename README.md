@@ -1,4 +1,4 @@
-# 🍕 SLOpPy - SLO demonstration on a simple Python API, used to design pizza toppings based on Wikipedia articles 
+# 🍕 SLOpPy - SLO demonstration on a simple Python API, that will design pizza toppings based on Wikipedia articles 
 
 ## 🍕 What it does
 This small API developed in FastAPI framework is using Spacy NLP to analyse Wikipedia articles & create pizza ideas based on the extracted words.
