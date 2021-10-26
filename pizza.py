@@ -1,4 +1,3 @@
-from webbrowser import get
 import uvicorn
 import random
 import time
