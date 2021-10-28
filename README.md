@@ -1,5 +1,9 @@
 # 🍕 SLOpPy - SLO demonstration on a simple Python API, that will design pizza toppings based on Wikipedia articles 
 
+_Made out of a boiler dough, covered with a sauce of The term automation, sprinkled with industry cheese and topped with Job losses and a bit of workers. Delicious!
+   --- The automation pizza_
+
+
 ![](https://cdn.zappy.app/34373924a812ca52e9a294faf4bf67dd.png)
 
 ## 🍕 Why SLOpPy?
