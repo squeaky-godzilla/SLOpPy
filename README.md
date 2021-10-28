@@ -4,7 +4,7 @@ _Made out of a boiler dough, covered with a sauce of The term automation, sprink
    --- The automation pizza_
 
 
-![](https://cdn.zappy.app/34373924a812ca52e9a294faf4bf67dd.png)
+![](https://cdn.zappy.app/d13377bd697a2fdd2823fb4c0a507816.png)
 
 ## 🍕 Why SLOpPy?
 There are a lot of pizzerias, but they're serving you pretty much the same thing - Salami pizza, Anchovy pizza, yawn.  
