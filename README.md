@@ -45,4 +45,19 @@ Example:
 Response:
 `{"name":"The automation pizza","description":"Made out of Automation dough, covered with a sauce of waste, sprinkled with quality cheese and topped with telephone networks and a bit of a desired set value. Delicious!"}`
 
-###
+### /sloppy-pizza
+This is a fast responding endpoint, used for easy generation of traffic on the API.
+
+The SLIs are set in the very same file as for the `/wiki-pizza`
+
+URL Params:
+* `error_rate` (float, optional) rolls a die and gets you a chance of 5xx error
+* `baking_time` (float, optional) adds some latency in seconds
+
+Example:
+`http://localhost:3333/sloppy-pizza?error_rate=0.5`
+
+Response:
+`{"pizza":"generic_pizza","baking_time":"0"}`
+
+
