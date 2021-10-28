@@ -95,13 +95,11 @@ async def get_wiki_pizza(
         return {
             "name": "The {} pizza".format(term.strip('"\\')),
             "description": 
-                "Made out of {} dough, {}ed with sauce of {}, {}ed with {} cheese and topped with {} and a bit of {}. Delicious!".format(
+                "Made out of {} dough, covered with a sauce of {}, sprinkled with {} cheese and topped with {} and a bit of {}. Delicious!".format(
                 get_word(nouns,3,20),
-                get_word(verbs,3,20),
                 get_word(nouns,3,20),
-                get_word(verbs,3,20),
                 get_word(nouns,3,20),
-                get_word(verbs,3,20),
+                get_word(nouns,3,20),
                 get_word(nouns,3,20),
                 ).strip('"\\')
         }

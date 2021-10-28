@@ -17,9 +17,9 @@ services:
     networks:
       - back-tier
     healthcheck:
-      test: [ "CMD", "curl", "localhost:3333/sloppy-pizza" ]
+      test: [ "CMD", "curl", "localhost:3333/sloppy-pizza?error_rate=0.4" ]
       timeout: 45s
-      interval: 10s
+      interval: 5s
       retries: 10
 
   prometheus:

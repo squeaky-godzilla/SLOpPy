@@ -1,0 +1,22 @@
+groups:
+  - name: sli_recording
+    rules:
+      - record: avg:request_duration:gauge
+        expr: http_request_duration_seconds_sum{handler="/sloppy-pizza",status="2xx"} / http_request_duration_seconds_count
+      
+      - record: sli:error_rate:binary
+        expr: clamp_max(clamp_max(rate(http_request_duration_seconds_count{handler="/sloppy-pizza",status!="2xx"}[60s]) > 0.15, 0) or clamp_min(rate(http_request_duration_seconds_count{handler="/sloppy-pizza",status!="2xx"}[60s]) <= 0.15, 1),1)
+      
+      - record: sli:request_duration:binary
+        expr: |
+          clamp_max(clamp_max(avg:request_duration:gauge{handler="/sloppy-pizza"} > 0.0005, 0) or clamp_min(avg:request_duration:gauge{handler="/sloppy-pizza"} <= 0.0005,1),1)
+
+      - record: avg:request_duration:gauge
+        expr: http_request_duration_seconds_sum{handler="/wiki-pizza",status="2xx"} / http_request_duration_seconds_count
+
+      - record: sli:request_duration:binary
+        expr: |
+          clamp_max(clamp_max(avg:request_duration:gauge{handler="/wiki-pizza"} > 2.5, 0) or clamp_min(avg:request_duration:gauge{handler="/wiki-pizza"} <= 2.5,1),1)
+
+      - record: sli:error_rate:binary
+        expr: clamp_max(clamp_max(rate(http_request_duration_seconds_count{handler="/wiki-pizza",status!="2xx"}[60s]) > 0.15, 0) or clamp_min(rate(http_request_duration_seconds_count{handler="/wiki-pizza",status!="2xx"}[60s]) <= 0.15, 1),1)
