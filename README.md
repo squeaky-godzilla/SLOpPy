@@ -23,3 +23,5 @@ Params:
 Example:
 `http://localhost:3333/wiki-pizza?rnd=True`
 
+Response:
+`{"name":"The Insurability pizza","description":"Made out of 6 months dough, covered with a sauce of the realty, sprinkled with 6 months cheese and topped with insurability and a bit of California. Delicious!"}`
