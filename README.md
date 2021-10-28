@@ -7,7 +7,7 @@ _Made out of a boiler dough, covered with a sauce of The term automation, sprink
 ![](https://cdn.zappy.app/34373924a812ca52e9a294faf4bf67dd.png)
 
 ## 🍕 Why SLOpPy?
-There is a lot of pizzerias, but they're serving you pretty much the same thing - Salami pizza, Anchovy pizza, yawn.  
+There are a lot of pizzerias, but they're serving you pretty much the same thing - Salami pizza, Anchovy pizza, yawn.  
 There are also a lot of articles talking about Service Level Monitoring and they give you the same theoretical low-calorie statements about how important SLOs are, yawn. They're not showing any specific way or math behind how SLIs and SLOs work.  
 
 This hack's ambition is to solve both problems - give you a pizza topping generating API to spice up your pizzeria's menu AND to give you an idea how you can start building SLOs.
